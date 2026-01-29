@@ -25,19 +25,25 @@
             color: #ecd48ae5;
         }
 
-        <button class="mybtn">Click Me</button>
-
-<style>
-.mybtn {
-  font-size: 76px;
-  padding: 14px 28px;
-  width: 200px;
-  height: 50px;
-  border-radius: 8px;
+        .bigbtn {
+  width: 300px;             /* length */
+  height: 200px;            /* height */
+  font-size: 24px;          /* text size */
+  color: #ffffff;           /* white text */
+  background-color: #333333; /* dark gray button for contrast */
   border: none;
+  border-radius: 12px;      /* rounded corners */
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255,255,255,0.2); /* subtle glow effect */
+  transition: background-color 0.3s, transform 0.2s;
 }
-</style>
+
+/* hover effect */
+.bigbtn:hover {
+  background-color: #555555;  /* lighter gray on hover */
+  transform: scale(1.05);     /* slight grow effect */
+}
+<style>
 </head>
 
 <body>
