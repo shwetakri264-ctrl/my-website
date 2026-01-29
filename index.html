@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hellooo</title>
+  <title>Shweta's Website</title>
+  <style>
+    /* Body styling */
+    body {
+      background-color: #000000;  /* Black background */
+      color: #00ffff;             /* Teal-ish text default */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
 
-    <style>
-        body {
-            background-color:#000000 ;
-            font-family: Arial;
-            text-align: center;
-        }
+    /* Heading */
+    h2 {
+      color: #00bfae;             /* Teal shade */
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            color: #f4cf5cd3;
-            font-size: 105px;
-        }
+    h1 {
+      color: #00e5ee;             /* Lighter teal shade */
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
 
-        h2  {
-           color: #ecd48ae5;
-           font-size: 95px;
-        }
-        
-        p {
-            font-size: 75px;
-            color: #ecd48ae5;
-        }
-    <style>
-        
+    /* Button styling */
+    .popbtn {
+      width: 300px;
+      height: 100px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #FFD700;             /* Golden text */
+      background: linear-gradient(135deg, #008080, #00bfae); /* teal shades */
+      border: 3px solid #FFD700;  /* golden border */
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #FFD700, 0 0 40px #00bfae; /* glowing effect */
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    /* Button hover effect */
+    .popbtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #FFD700, 0 0 60px #00bfae;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>HEllo Everyone </h1>
-    <h2>welcome here, a website made by me...Shweta</h2>
-    <p>i love you all so muchh</p>
-    <button onclick="alert('Thanks a lot for visiting here')">
-    Click Me
-</button>
+  <!-- Headings -->
+  <h2>Hello everyone</h2>
+  <h1>Welcome to this website made by me...Shweta</h1>
+
+  <!-- Button -->
+  <button class="popbtn" onclick="showMessage()">Click Me</button>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage() {
+      alert("Thank you everyone for visiting");
+    }
+  </script>
 </body>
 </html>
